@@ -1,10 +1,14 @@
-import os
-import time
+# importing modules
+import os # to change the title
+import time # to add a delay
 
+# creating a new list
 shopping_list = []
 
+# changing the console title
 os.system("title Shopping List")
 
+#creating a new function
 def menu():
     selection = input("1: Show Shoppinglist.\n2: Add Product\n3: Remove Product\n\nEnter: ")
     def adding():
@@ -34,7 +38,7 @@ def menu():
         adding()
     if selection == "3":
         removing()
-
+        
 while 1 < 2:
     os.system("cls")
     print(menu())
